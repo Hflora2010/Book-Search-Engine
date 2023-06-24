@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
 import { GET_ME } from "../utils/queries"; 
 import { REMOVE_BOOK} from "../utils/mutations";
-import { useMutation } from "@apollo/client";
+import { useMutation, useQuery } from "@apollo/client";
 import {
   Container,
   Card,
@@ -23,7 +22,7 @@ const SavedBooks = () => {
     variables: { username: username }
   });
 
-  const [removeBook, { err }] = useMutation(REMOVE_BOOK);
+  const [removeBook, { error }] = useMutation(REMOVE_BOOK);
   
   const userData = data?.me || {};
   
