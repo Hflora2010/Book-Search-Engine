@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useParams } from "react-router-dom";
 import { GET_ME } from "../utils/queries"; 
 import { REMOVE_BOOK} from "../utils/mutations";
@@ -22,7 +22,7 @@ const SavedBooks = () => {
     variables: { username: username }
   });
 
-  const [removeBook, { error }] = useMutation(REMOVE_BOOK);
+  const [removeBook] = useMutation(REMOVE_BOOK);
   
   const userData = data?.me || {};
   
@@ -40,9 +40,12 @@ const SavedBooks = () => {
     
     try {
       const { data } = await removeBook({
-        variables: { bookId, token }
+        variables: { $bookId: bookId}
       });
 
+      if(!data) {
+        throw new Error('something went wrong');
+      }
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
     } catch (err) {
