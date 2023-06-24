@@ -32,8 +32,6 @@ const SignupForm = () => {
       event.stopPropagation();
     }
 
-    validated(true);
-
     try {
       const { data } = await addUser({
         variables: { userFormData },
@@ -46,7 +44,7 @@ const SignupForm = () => {
       //authenticating user allowing login
       Auth.login(data.addUser.token);
     } catch (err) {
-      console.error(err);
+      console.log(error);
       setShowAlert(true);
     }
 
