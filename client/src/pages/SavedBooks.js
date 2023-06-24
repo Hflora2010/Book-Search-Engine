@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_ME } from "../utils/queries"; 
-import { REMOVE_BOOK} from "../utils/queries";
+import { REMOVE_BOOK} from "../utils/mutations";
 import {
   Container,
   Card,
