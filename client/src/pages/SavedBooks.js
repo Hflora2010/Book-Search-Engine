@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { GET_ME } from "../utils/queries"; 
 import { REMOVE_BOOK} from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
@@ -18,10 +18,11 @@ import { removeBookId } from '../utils/localStorage';
 
 
 const SavedBooks = () => {
-  // const { username } = useParams();
+  const { username } = useParams();
 
-  const { loading, data } = useQuery(GET_ME);
-    // variables: { username: username }
+  const { loading, data } = useQuery(GET_ME, {
+    variables: { username: username }
+  });
 
   const [removeBook] = useMutation(REMOVE_BOOK);
   
@@ -42,8 +43,8 @@ const SavedBooks = () => {
     }
     
     try {
-      await removeBook({
-        variables: { bookId }
+      const { data } = await removeBook({
+        variables: { bookId: bookId}
       });
 
       if(!data) {
@@ -56,7 +57,7 @@ const SavedBooks = () => {
     }
   };
   // if data isn't here yet, say so
-  if (!data || !userData.savedBooks) {
+  if (!data) {
     return <h2>LOADING...</h2>;
   }
 
