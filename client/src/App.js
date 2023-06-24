@@ -44,16 +44,13 @@ function App() {
         <Switch>
           <Route 
             path='/' 
-            element={<SearchBooks />} 
-          />
+          ><SearchBooks /></Route>
           <Route 
-            path='/saved' 
-            element={<SavedBooks />} 
-          />
+            path='/saved'
+          ><SavedBooks /></Route>
           <Route 
             path='*'
-            element={<h1 className='display-2'>Wrong page!</h1>}
-          />
+          ><h1 className='display-2'>Wrong page!</h1></Route>
         </Switch>
       </>
     </Router>
