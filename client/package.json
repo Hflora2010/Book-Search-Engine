@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://hflora2010.github.io/Book-Search-Engine/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3002",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

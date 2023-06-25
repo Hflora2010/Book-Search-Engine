@@ -6,10 +6,10 @@ This challenge was a fully functioning Google Books API search engine built with
 ## Usage
 
 To use: <br>
-1. Follow the link below titled 'Book Search Engine' to navigate to this project's respository in my personal Github. <br>
-2. This command will automatically open a window in your browser, navigating you to Google Books Search Homepage
+1. Follow the link below titled 'Book Search Engine' to navigate Google Book Search. <br>
+2. This link will automatically open a window in your browser, navigating you to Google Books Search Homepage.
 3. Click "Login/Signup" in the top right corner and create an account for yourself.
-4. Search for a book you are interested in, and click "save this book" if you would like to save it to your personal list. This personal list can be found in the top right of the navigation bar.  
+4. Search for a book you are interested in, and click 'Save this Book" if you would like to save it to your personal list. This personal list can be found in the top right of the navigation bar labled 'See Your Books'.  
 <br><br>
 Below is a link to this project's application: <br>
 <a href="https://hflora2010.github.io/Book-Search-Engine/">Book Search Engine</a>
