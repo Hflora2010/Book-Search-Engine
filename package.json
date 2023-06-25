@@ -1,5 +1,6 @@
 {
   "name": "googlebooks-app",
+  "homepage": "https://hflora2010.github.io/Book-Search-Engine/",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -15,5 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

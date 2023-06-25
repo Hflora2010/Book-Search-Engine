@@ -6,23 +6,21 @@ This challenge was a fully functioning Google Books API search engine built with
 ## Usage
 
 To use: <br>
-1. Follow the link below titled 'Book-Search-Engine' to navigate to this project's respository in my personal Github. <br>
-3. Clone the SSH key, and open VS Code, or whatever coding platform you use. <br>
-4. After cloaning is complete, you can open this application and right click on the 'E-COMMERCCE-BACK-END' folder. <br>
-5. Click 'Open in Integrated Terminal'.<br>
-6. Type 'npm i'.<br>
-7. Upon installation completion type npm run develop
-8. This command will automatically open a window in your browser, navigating you to Google Books Search Homepage
-9. Click "Login/Signup" in the top right corner and create an account for yourself.
-10. Search for a book you are interested in, and click "save this book" if you would like to save it to your personal list. This personal list can be found in the top right of the navigation bar.  
+1. Follow the link below titled 'Book Search Engine' to navigate to this project's respository in my personal Github. <br>
+2. This command will automatically open a window in your browser, navigating you to Google Books Search Homepage
+3. Click "Login/Signup" in the top right corner and create an account for yourself.
+4. Search for a book you are interested in, and click "save this book" if you would like to save it to your personal list. This personal list can be found in the top right of the navigation bar.  
 <br><br>
-Below is a link to this project's application on my personal Github account: <br>
-<a href="https://github.com/Hflora2010/E-commerce-Back-End">E-Commerce Back End</a>
+Below is a link to this project's application: <br>
+<a href="https://hflora2010.github.io/Book-Search-Engine/">Book Search Engine</a>
 <br>
 <br>
 
-You can access the full video at the following link: <br>
+Below is a Screenshot of the homepage: <br>
 <a href="https://watch.screencastify.com/v/b30lm67GpS01oISGmM2H"> Full E-Commerce Back End Demonstration</a><br>
+
+Below is a Screenshot of what you will see when you signup/login and search for a book:
+
 
 
 ## Credits
